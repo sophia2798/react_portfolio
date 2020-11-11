@@ -8,7 +8,8 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background: radial-gradient(#333, #000);
+    background: linear-gradient(to bottom, #020111 10%,#3a3a52 100%);
+    /* background: linear-gradient(to bottom, #99c2ee 0%, #7fbafa 50%,#eed0cf 100%); */
 }
 
 .set {
@@ -25,47 +26,52 @@ body {
 }
 
 .set div:nth-child(1) {
-    left: 20%;
+    left: 0%;
     animation: animate 15s linear infinite;
     animation-delay: -7s;
 }
 
 .set div:nth-child(2) {
-    left: 0%;
+    left: 20%;
     animation: animate 20s linear infinite;
     animation-delay: -5s;
 }
 
 .set div:nth-child(3) {
-    left: 50%;
+    left: 55%;
     animation: animate 25s linear infinite;
 }
 
 .set div:nth-child(4) {
     left: 70%;
-    animation: animate 15s linear infinite;
+    animation: animate 20s linear infinite;
     animation-delay: -5s;
 }
 
 .set div:nth-child(5) {
     left: 90%;
-    animation: animate 18s linear infinite;
+    animation: animate 14s linear infinite;
     animation-delay: -10s;
 }
 
 .set div:nth-child(6) {
     left: 30%;
-    animation: animate 12s linear infinite;
+    animation: animate 18s linear infinite;
 }
 
 .set div:nth-child(7) {
-    left: 45%;
-    animation: animate 14s linear infinite;
+    left: 40%;
+    animation: animate 25s linear infinite;
 }
 
 .set div:nth-child(8) {
     left: 80%;
-    animation: animate 15s linear infinite;
+    animation: animate 28s linear infinite;
+}
+
+.set div:nth-child(9) {
+    left: 12%;
+    animation: animate 20s linear infinite;
 }
 
 @keyframes animate {
@@ -105,14 +111,45 @@ body {
     filter: blur(4px);
 }
 
+.set4 {
+    transform: scale(1.3) rotateY(180deg);
+    filter: blur(3px);
+}
+
 #home-header {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    margin: 0;
+    margin: 0 0 1.5rem 0;
     padding: 0;
     font-size: 8em;
-    transform: translateY(-50%);
     color: white;
+    letter-spacing: 0.2rem;
+    font-size: 5rem;
+    font-weight: normal;
+}
+
+.home-header-wrapper {
+    position: absolute;
+    font-family: 'Roboto Slab', serif;
+    transform: translateY(-50%);
+    top: 50%;
+    text-align: center;
+    width: 50%;
+    left: 25%;
+    z-index: 6;
+}
+
+.home-header-wrapper p {
+    padding: 1rem;
+    color: whitesmoke;
+}
+
+.enter-wrapper {
+    width: auto;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.enter {
+    letter-spacing: 0.5rem;
+    color: white;
+    font-family: 'Roboto Slab', serif;
 }
