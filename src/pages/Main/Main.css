@@ -1,0 +1,6 @@
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #111;
+    color: white;
+}
