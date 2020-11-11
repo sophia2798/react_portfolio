@@ -11,9 +11,11 @@ function Main() {
         <div className="main-container">
             <Navbar/>
             <Jumbo/>
-            <h1>MAIN PAGE</h1>
-            <About/>
-            <Portfolio/>
+            <div className="main-content" style={{position:'relative', zIndex:6, background:'#111'}}>
+                <About/>
+                <Portfolio/>
+            </div>
+
         </div>
     )
 }

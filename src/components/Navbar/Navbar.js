@@ -7,7 +7,7 @@ import logo from "../../assets/logo2.png";
 
 function Navbar() {
     return (
-        <div className='Navbar'>
+        <div className='Navbar' style={{position:'relative', zIndex:6}}>
             <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:'#171717'}}>
             <Link className="navbar-brand" to="/main"><img src={logo} alt="logo" /></Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
