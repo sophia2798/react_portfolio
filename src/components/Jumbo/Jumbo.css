@@ -143,3 +143,9 @@
 #intro p {
     letter-spacing: 0.15rem;
 }
+
+@media only screen and (min-width: 1510px) {
+    #intro {
+        top: 25%;
+    }
+}

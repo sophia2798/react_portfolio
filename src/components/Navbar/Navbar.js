@@ -23,9 +23,9 @@ function Navbar() {
                 <li className="nav-item">
                     <HashLink className="nav-link" to="/main#portfolio-content">Portfolio</HashLink>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <Link className="nav-link" to="#">Contact</Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                     <Socials/>
                 </li>
