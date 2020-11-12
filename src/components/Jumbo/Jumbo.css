@@ -93,11 +93,20 @@
 .hex h1, .hex p {
     width: 100%;
     padding: 0 5%;
-    background-color: #008080;
-    background-color: rgba(0, 128, 128, 0.8);
+    /* background-color: #464646; */
+    background-color: rgba(93, 94, 94, 0.4);
     font-family: 'Raleway', sans-serif;
-    -webkit-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
-            transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+    /* -webkit-transition: top .4s ease-out, bottom .4s ease-out, .4s padding .4s ease-out;
+            transition: top .4s ease-out, bottom .4s ease-out, .4s padding .4s ease-out; */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .hex h1 {
@@ -139,6 +148,9 @@
     top: 0%;
     padding-top: 20%;
     font-size: 0.8rem;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    animation: fadein 0.5s ease-in;
 }
 
 /* SPACING AND SIZING */
@@ -288,13 +300,9 @@
     margin: 0;
 }
 
-/* .jumbo-col p {
-    margin-top: 1rem;
+.header-text {
+    text-align: center;
 }
-
-.jumbo-col strong {
-    font-size: 1.5rem;
-} */
 
 .jumbo-set div:nth-child(1) {
     left: 0%;
