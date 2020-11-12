@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { HashLink } from 'react-router-hash-link';
+import Socials from "../../components/Socials/Socials";
 // import logo from "../../assets/logo2.png";
 
 function Navbar() {
@@ -24,6 +25,9 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="#">Contact</Link>
+                </li>
+                <li className="nav-item">
+                    <Socials/>
                 </li>
                 </ul>
             </div>
