@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { HashLink } from 'react-router-hash-link';
 import Socials from "../../components/Socials/Socials";
+import Resume from "../../assets/resume_09_2020.pdf";
 // import logo from "../../assets/logo2.png";
 
 function Navbar() {
@@ -22,6 +23,9 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                     <HashLink className="nav-link" to="/main#portfolio-content">Portfolio</HashLink>
+                </li>
+                <li className="nav-item">
+                    <a href={Resume} alt="resume" style={{margin:0,color:'white'}}target="blank"><p style={{margin:0,paddingTop:'0.5rem'}}>Resume</p></a>
                 </li>
                 {/* <li className="nav-item">
                     <Link className="nav-link" to="#">Contact</Link>
